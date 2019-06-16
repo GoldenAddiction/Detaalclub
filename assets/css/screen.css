@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css?family=Heebo|Pacifico&display=swap');
+body{
+    font-family: 'Heebo', sans-serif;
+}
 nav
 {
     background-color: #164e95;
@@ -33,4 +37,13 @@ nav ul li a:hover{
     position: relative;
     z-index: -1;
     width: 100vw;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
 }
