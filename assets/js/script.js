@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
     document.querySelector('#dots').addEventListener('click', clickedOnDot);
     //1000 = 1 seconde
-    window.setInterval(slideShow, 3000);
+    window.setInterval(slideShow, 8000);
     dots();
 }
 
@@ -24,7 +24,7 @@ function slideShow() {
     }
     let alt = imagesSlideShow[imageIndex].name;
     let img = `assets/slideShowImages/${imagesSlideShow[imageIndex].image}`;
-    document.querySelector('#slideShow').innerHTML = `<img alt="${alt}" title="${alt}" src=${img} >`;
+    document.querySelector('#slideShow').innerHTML = `<img alt="${alt}" title="${alt}" src=${img} class="fade" >`;
     document.querySelector(`#dot-${imageIndex}`).classList.replace('dot', 'selectedDot');
 }
 
@@ -33,7 +33,7 @@ function clickedOnDot(e) {
         let clickedImg = e.target.id;
         let id = Number(clickedImg.substring(4, clickedImg.length));
         let img = `assets/slideShowImages/${imagesSlideShow[id].image}`;
-        document.querySelector('#slideShow').innerHTML = `<img alt="${imagesSlideShow[id].name}" title="${imagesSlideShow[id].name}" src=${img} >`;
+        document.querySelector('#slideShow').innerHTML = `<img alt="${imagesSlideShow[id].name}" title="${imagesSlideShow[id].name}" src=${img} class="fade" >`;
         removeDotColor();
         document.querySelector(`#dot-${id}`).classList.replace('dot', 'selectedDot');
         imageIndex = id;
