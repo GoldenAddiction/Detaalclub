@@ -28,6 +28,7 @@ function slideShow() {
 }
 
 function clickedOnDot(e) {
+    //TODO Kleur van de dots veranderen als het die foto is
     if (e.target.className === "dot"){
         let clickedImg = e.target.id;
         let img = `assets/slideShowImages/${imagesSlideShow[clickedImg].image}`;
