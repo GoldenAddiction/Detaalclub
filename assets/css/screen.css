@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo|Pacifico&display=swap');
 body{
     font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
 }
 main{
     width:80%;
@@ -17,8 +18,7 @@ h1{
      text-align: center;
      color:  #164e95;
      font-size:4rem;
- }
-
+}
 h2{
     margin-top:10vh;
     font-size:2rem;
@@ -31,15 +31,11 @@ h3{
     font-weight:bold;
     margin-bottom:10px;
 }
-nav
-{
+nav {
     background-color: #164e95;
     width:100vw;
-    height:auto;
 }
 ul{
-    width:50%;
-    margin:auto;
     text-align: center;
 }
 nav ul li{
@@ -65,9 +61,6 @@ nav ul li a:hover{
 /*     slideshow  */
 /*################*/
 
-#slideShow{
-    height: auto;
-}
 #slideShow img{
     position: relative;
     z-index: -1;
@@ -75,6 +68,7 @@ nav ul li a:hover{
     border-bottom: 5px solid black;
 }
 #dots{
+    z-index: 1;
     margin-top: -5vh;
     display: flex;
     justify-content: center;
