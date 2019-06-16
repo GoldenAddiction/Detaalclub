@@ -1,5 +1,4 @@
 
-
 nav
 {
     background-color: #164e95;
@@ -26,4 +25,12 @@ nav ul li a{
 }
 nav ul li a:hover{
     color:darkgrey;
+}
+#slideShow{
+    height: auto;
+}
+#slideShow img{
+    position: relative;
+    z-index: -1;
+    width: 100vw;
 }
