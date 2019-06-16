@@ -1,0 +1,29 @@
+
+
+nav
+{
+    background-color: #164e95;
+    width:100vw;
+    height:auto;
+}
+ul{
+    width:50%;
+    margin:auto;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    padding:20px;
+
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size:1.3rem;
+}
+nav ul li a:hover{
+    color:darkgrey;
+}
