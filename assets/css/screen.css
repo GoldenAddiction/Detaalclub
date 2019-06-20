@@ -92,18 +92,29 @@ section img{
     display: inline-block;
     transition: background-color 0.4s ease;
 }
-#Menu{
+#phone{
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    #Menu{
+    #phone{
         display:inline-block;
-        color:white;
+        color: #7a7a7a;
         font-weight:bold;
+        font-size:1.3rem;
     }
-    .nav{
-        display:none;
+    li{
+
+    }
+    #pc{
+        display: none;
+    }
+    .sub{
+        /*display:none;*/
+        display: block;
+        border-top: 1px solid white;
+
+
     }
     
 }
