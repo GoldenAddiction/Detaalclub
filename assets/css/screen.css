@@ -52,10 +52,9 @@ nav ul li a{
 nav ul li a:hover{
     color:darkgrey;
 }
-#kids{
-    width:40%;
+section img{
+    width: 20%;
 }
-
 
 /*################*/
 /*     slideshow  */
