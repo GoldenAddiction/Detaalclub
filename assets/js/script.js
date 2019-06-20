@@ -4,9 +4,23 @@ document.addEventListener('DOMContentLoaded', init);
 
 function init() {
     document.querySelector('#dots').addEventListener('click', clickedOnDot);
+    document.querySelector('#menu').addEventListener('click', showDropDownMenu);
+   // let width = window.matchMedia("(max-width: 768px)");
+   // checkScreenSize(width);
+   // width.addListener(checkScreenSize);
     //1000 = 1 seconde
     window.setInterval(slideShow, 8000);
     dots();
+}
+
+function showDropDownMenu(e) {
+    e.preventDefault();
+    if (document.querySelector('#dropDown').classList.contains("hidden") ){
+        document.querySelector('#dropDown').classList.replace("hidden", "none");
+    } else {
+        console.log("test");
+        document.querySelector('#dropDown').classList.replace("none", "hidden");
+    }
 }
 
 function dots() {
@@ -17,7 +31,7 @@ function dots() {
 
 function slideShow() {
     removeDotColor();
-    if (imageIndex === 3){
+    if (imageIndex === imagesSlideShow.length-1){
         imageIndex = 0;
     } else {
         imageIndex +=1;
@@ -43,5 +57,12 @@ function clickedOnDot(e) {
 function removeDotColor() {
     for (let img of imagesSlideShow ) {
         document.querySelector(`#dot-${img.id}`).classList.replace('selectedDot', 'dot');
+    }
+}
+function checkScreenSize(width){
+    if (width.matches) { // If media query matches
+        console.log("red")
+    } else {
+        console.log("blue")
     }
 }

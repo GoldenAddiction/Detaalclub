@@ -43,16 +43,17 @@ section p{
 }
 nav ul li{
     display: inline-block;
-    text-align: center;
-    padding:20px;
+    padding: 20px;
 }
-nav ul li a{
+nav a{
     text-decoration: none;
     color:white;
     font-weight:bold;
     font-size:1.3rem;
+    text-align: center;
+
 }
-nav ul li a:hover{
+nav a:hover{
     color:darkgrey;
 }
 section img{
@@ -62,9 +63,49 @@ section img{
 section{
     width:33%;
     margin-right:30px;
-
     margin-bottom:20px;
 
+}
+#phone{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #phone{
+        display:inline-block;
+        color: #7a7a7a;
+        font-weight:bold;
+        font-size:1.3rem;
+        text-align: center;
+    }
+    section{
+        width:50%;
+        margin-right:30px;
+        margin-bottom:20px;
+    }
+    #pc{
+        display: none;
+    }
+    #phone a{
+       width: 100%;
+    }
+
+
+}
+
+.hidden{
+    display: none;
+}
+.sub{
+    display: block;
+    border-top: 1px solid white;
+}
+#info{
+    margin-top:5%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /*################*/
@@ -79,7 +120,7 @@ section{
 }
 #dots{
     z-index: 1;
-    margin-top: -5vh;
+    margin-top: -80px;
     display: flex;
     justify-content: center;
 }
@@ -103,43 +144,8 @@ section{
     display: inline-block;
     transition: background-color 0.4s ease;
 }
-#phone{
-    display: none;
-}
-#info{
-    margin-top:5%;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-    #phone{
-        display:inline-block;
-        color: #7a7a7a;
-        font-weight:bold;
-        font-size:1.3rem;
-    }
-    section{
-        width:50%;
-        margin-right:30px;
-
-        margin-bottom:20px;
-
-    }
-    #pc{
-        display: none;
-    }
-    .sub{
-        /*display:none;*/
-        display: block;
-        border-top: 1px solid white;
 
 
-    }
-
-}
 /*################*/
 /*     fade      */
 /*##############*/
