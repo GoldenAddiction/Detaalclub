@@ -3,6 +3,8 @@
 body{
     font-family: 'Heebo', sans-serif;
     overflow-x: hidden;
+    height:100%;
+    margin:0;
 }
 main{
     width:80%;
@@ -69,30 +71,6 @@ section{
 #phone{
     display: none;
 }
-
-@media screen and (max-width: 768px) {
-    #phone{
-        display:inline-block;
-        color: #7a7a7a;
-        font-weight:bold;
-        font-size:1.3rem;
-        text-align: center;
-    }
-    section{
-        width:50%;
-        margin-right:30px;
-        margin-bottom:20px;
-    }
-    #pc{
-        display: none;
-    }
-    #phone a{
-       width: 100%;
-    }
-
-
-}
-
 .hidden{
     display: none;
 }
@@ -100,6 +78,48 @@ section{
     display: block;
     border-top: 1px solid white;
 }
+/*################*/
+/*     footer  */
+/*################*/
+footer{
+    background: #164e95;
+    color: white;
+    height:auto;
+    padding: 0 20px;
+    text-align:center;
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". cont loc";
+}
+#location{
+    grid-area: loc;
+    width:80%;
+    text-align:center;
+
+}
+#location p{
+    text-align: center;
+    font-weight:bold;
+}
+#location h3{
+    margin-top:20px;
+}
+#contact{
+    grid-area: cont;
+}
+iframe{
+    height:200px;
+    width: 100%;
+}
+#maker{
+    text-align: center;
+}
+/*################*/
+/*     body/main  */
+/*################*/
+
 #info{
     margin-top:5%;
     display:flex;
@@ -163,4 +183,30 @@ section{
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/***************/
+/* media screen*/
+/***************/
+@media screen and (max-width: 768px) {
+    #phone{
+        display:inline-block;
+        color: #7a7a7a;
+        font-weight:bold;
+        font-size:1.3rem;
+        text-align: center;
+    }
+    section{
+        width:90%;
+        margin-right:30px;
+        margin-bottom:20px;
+    }
+    #pc{
+        display: none;
+    }
+    #phone a{
+        width: 100%;
+    }
+
+
 }
