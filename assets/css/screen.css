@@ -58,11 +58,11 @@ nav a{
 nav a:hover{
     color:darkgrey;
 }
-main section img{
+section img{
     width: 90%;
     margin-bottom:20px;
 }
-main section{
+section{
     width:33%;
     margin-right:30px;
     margin-bottom:20px;
@@ -85,14 +85,13 @@ footer{
     background: #164e95;
     color: white;
     height:auto;
-    padding: 20px;
+    padding: 0 20px;
     text-align:center;
     display: grid;
     grid-template-rows: 2fr;
     grid-auto-columns: 1fr 1fr 1fr;
     grid-template-areas:
-        "cont loc"
-        "p p";
+        ". cont loc";
 }
 #location{
     grid-area: loc;
@@ -108,14 +107,7 @@ footer{
     margin-top:20px;
 }
 #contact{
-    margin-top: 20px;
     grid-area: cont;
-}
-#contact a{
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
 iframe{
     height:200px;
@@ -123,9 +115,6 @@ iframe{
 }
 #maker{
     text-align: center;
-}
-p{
-    grid-area: p;
 }
 /*################*/
 /*     body/main  */
