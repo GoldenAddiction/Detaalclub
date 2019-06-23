@@ -81,7 +81,6 @@ footer{
     grid-template-areas:
         "cont loc"
         "p p";
-
 }
 #location{
     grid-area: loc;
