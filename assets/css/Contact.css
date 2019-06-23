@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width:95%;
+    margin:auto;
 }
 .icon{
     height:40px;
@@ -20,10 +21,11 @@ h3{
     color:white;
 }
  main section{
+
     height:250px;
     background: #4267b2;
      border-radius: 20px;
-     width:25vw;
+     width:19vw;
      margin-bottom:50px;
      margin-right:6vw;
 }
@@ -39,7 +41,7 @@ h3{
      color:white;
      background-color:#164e95;
      width:60%;
-     margin-top:5vw;
+     margin-top:3.6vw;
      border-radius:20px;
      font-size:1.2rem;
      margin-left: auto;
@@ -48,6 +50,9 @@ h3{
 
 
  }
+main section:nth-child(1) button {
+    width:15vw;
+}
  main section:nth-child(2){
      background: green;
 
@@ -71,4 +76,8 @@ main section:nth-child(3) p {
 }
 main section:nth-child(3) button {
     margin-top:5.7vw;
+}
+button a{
+    text-decoration: none;
+    color:white;
 }
