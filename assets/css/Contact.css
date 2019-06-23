@@ -1,5 +1,15 @@
-.icon{
-    height:30px;
-    width:30px;
 
+div{
+
+}
+.icon{
+    height:35px;
+    width:35px;
+
+}
+ main section{
+    height:auto;
+    background: #4267b2;
+     border-radius: 20px;
+     width:30%;
 }
