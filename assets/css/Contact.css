@@ -3,11 +3,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    width:95%;
 }
 .icon{
-    margin-top:10px;
     height:40px;
     width:40px;
+    display: block;
+    margin: 10px auto;
 
 }
 
@@ -20,7 +23,7 @@ h3{
     height:250px;
     background: #4267b2;
      border-radius: 20px;
-     width:30%;
+     width:25vw;
      margin-bottom:50px;
      margin-right:6vw;
 }
@@ -41,6 +44,31 @@ h3{
      font-size:1.2rem;
      margin-left: auto;
      margin-right:auto;
+     display:block;
 
 
  }
+ main section:nth-child(2){
+     background: green;
+
+ }
+main section:nth-child(2) p {
+    line-height: 5px;
+    text-align:center;
+
+}
+main section:nth-child(2) button {
+    margin-top:5.7vw;
+}
+main section:nth-child(3){
+    background: orange;
+
+}
+main section:nth-child(3) p {
+    line-height: 5px;
+    text-align:center;
+
+}
+main section:nth-child(3) button {
+    margin-top:5.7vw;
+}
