@@ -88,15 +88,13 @@ footer{
     padding: 20px;
     text-align:center;
     display: grid;
-    grid-template-rows: 2fr;
-    grid-auto-columns: 1fr 1fr 1fr;
     grid-template-areas:
         "cont loc"
         "p p";
+
 }
 #location{
     grid-area: loc;
-    width:80%;
     text-align:center;
 
 }
@@ -120,6 +118,8 @@ footer{
 iframe{
     height:200px;
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 #maker{
     text-align: center;
@@ -221,9 +221,8 @@ p{
         font-size:1.3rem;
         text-align: center;
     }
-    main section, section{
+    main section{
         width:90%;
-        margin-right:30px;
         margin-bottom:20px;
     }
     #pc{
@@ -232,6 +231,15 @@ p{
     #phone a{
         width: 100%;
     }
-
+    footer{
+        grid-template-areas:
+                "cont"
+                "loc"
+                "p";
+    }
+    footer p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
 }
