@@ -36,8 +36,17 @@
     <h2>Ons contacteren</h2>
     <hr>
     <div id ="mail">
-        <form>
-        <p>sdfrgsdds</p>
+        <form method="POST" action="">
+            <label for="voornaam">Voornaam:</label><input type="text" id="voornaam" name="voornaam">
+            <label for="achternaam">Achternaam: </label><input type="text"  id="achternaam" name="achternaam">
+            <label for="email">Email: </label><input type="email" id="email"  name="email">
+            <label for="telnr">Telefoon nummer: </label><input type="tel" name="telnr" id="telnr">
+            <label for="bericht">Uw bericht</label>
+            <textarea name="content" id="bericht">
+
+            </textarea>
+            <input type="submit" name="send" id="send">µ
+            <button>Annuleren</button>
         </form>
     </div>
     <div class="Contact">
@@ -46,14 +55,13 @@
             <h3>Facebook</h3>
             <p>Wilt u onze Facebook pagina bezoeken? Druk dan op de knop hieronder.</p>
             <button> <a href ="https://www.facebook.com">Facebook pagina</a></button>
-            <!--//todo als je klikt op de button moet hij naar facebook gaan-->
+
         </section>
         <section>
             <img src="images/call.png" class="icon" title="bellen" alt="bellen">
             <h3>Bellen</h3>
             <p>U kan ons Contacteren op het </p><p><b>nummer: 04/78 27 87 91</b></p>
             <button><a href="tel:+32478278791">Ons Bellen</a></button>
-            <!--//todo als je klikt op de button moet hij bellen gaan-->
         </section>
         <section>
             <img src="images/message.png" class="icon" title="bellen" alt="bellen">
