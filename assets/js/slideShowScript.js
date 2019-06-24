@@ -10,7 +10,7 @@ function init() {
 // width.addListener(checkScreenSize);
 //1000 = 1 seconde
     document.querySelector('#dots').addEventListener('click', clickedOnDot);
-   /* window.setInterval(slideShow, 8000);*/
+   window.setInterval(slideShow, 8000);
     dots();
 
 }
