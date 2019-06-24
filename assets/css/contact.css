@@ -34,7 +34,7 @@ h3{
      padding-right:10px;
      padding-top:20px;
  }
- button{
+ #facebook, #bellen, #sendMail{
      border:none;
      color:white;
      background-color:#164e95;
