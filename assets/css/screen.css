@@ -3,8 +3,11 @@
 body{
     font-family: 'Heebo', sans-serif;
     overflow-x: hidden;
-    height:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
     margin:0;
+    position: relative;
 }
 main{
     width:80%;
@@ -81,6 +84,7 @@ footer{
     grid-template-areas:
         "cont loc"
         "p p";
+    margin-top: auto;
 }
 #location{
     grid-area: loc;
