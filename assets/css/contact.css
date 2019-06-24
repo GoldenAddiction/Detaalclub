@@ -129,9 +129,10 @@ hr{
         flex-direction: column;
     }
     main section{
-        width: auto;
+        width: 80vw;
         margin-right: 0;
     }
+
     form{
         width:80%;
     }
