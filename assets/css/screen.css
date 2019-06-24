@@ -126,14 +126,15 @@ iframe{
 @media screen and (max-width: 768px) {
     h1{
         font-size:1.7rem;
-        margin-top:50px;
     }
     #phone{
+        padding-top: 15px;
         display:inline-block;
         color: #7a7a7a;
         font-weight:bold;
         font-size:1.3rem;
         text-align: center;
+        height: 40px;
     }
     #pc{
         display: none;
