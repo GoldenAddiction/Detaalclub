@@ -17,3 +17,12 @@ main section article h3{
 main section article p{
     grid-area: p;
 }
+@media screen and (max-width: 768px) {
+    main section article {
+        display: grid;
+        grid-template-areas:
+         "h3"
+        "img"
+        "p";
+    }
+}
