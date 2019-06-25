@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/screen.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
 </head>
 <body>
 <header>
@@ -30,10 +30,20 @@
             <li class= "sub"><a  href="galerij.html">Gallerij</a></li>
         </ul>
     </nav>
-    <main>
-        <div id="inloggen">
-            <h3></h3>
-        </div>
-    </main>
 
 </header>
+<main>
+    <div id="inloggen">
+        <h3> Inloggen </h3>
+        <form>
+            <label for="username">Gebruikersnaam: </label> <input type="text" name="username" id="username">
+            <label for="password">Wachtwoord: </label> <input type="password" name="password" id="password">
+            <input type="submit" name="submit" id="submit" value="inloggen">
+        </form>
+    </div>
+</main>
+
+</body>
+<script src="assets/js/script.js"></script>
+</html>
+
