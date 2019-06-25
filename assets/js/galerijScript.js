@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
     loadInImages();
     document.querySelector('#galerij').addEventListener('click', clickImage);
-    document.querySelector('#selectedImage').addEventListener('click', clickclose);
+    document.querySelector('main').addEventListener('click', clickclose);
 }
 
 function loadInImages() {
@@ -24,15 +24,17 @@ function clickImage(e) {
 function showImage(e) {
     document.querySelector('#selectedImage').innerHTML += e.target.outerHTML;
     document.querySelector('#selectedImage').classList.remove('hidden');
+    document.querySelector('#close').classList.remove('hidden');
 }
 
 function clickclose(e) {
-    if (e.target.alt === 'close'){
+    if (e.target.id === 'closeImage'){
         closeImage();
     }
 }
 
 function closeImage() {
-    document.querySelector('#selectedImage').innerHTML = "<div class='close' id='close'><img src='images/close.svg' alt='close' title='close'></div>";
+    document.querySelector('#selectedImage').innerHTML = "";
     document.querySelector('#selectedImage').classList.add('hidden');
+    document.querySelector('#close').classList.add('hidden');
 }

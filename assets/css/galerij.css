@@ -34,14 +34,35 @@
     z-index: 101;
     margin-left: 0;
 }
-#selectedImage div img{
-    height: 1.5vw;
-    width: 1.5vw;
+#close{
+    height: 10vh;
+    margin-left: 47vw;
+    margin-right: 47vw;
+    width: 6vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    border-radius: 0 0 20% 20%;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 101;
+    cursor: pointer;
+    -webkit-animation-name: close;
+    -webkit-animation-duration: 1s;
+    animation-name: close;
+    animation-duration: 1s;
 }
-#selectedImage div img:hover{
-    height: 2vw;
-    width: 2vw;
+#close p{
+    padding-top: 3vh;
 }
-#selectedImage div img:hover #selectedImage div{
-    margin-right: 3.75vw;
+@-webkit-keyframes close {
+    0%   {margin-top: -5%}
+    100% {margin-top: 0}
+}
+
+@keyframes close{
+    0%   {margin-top: -5%}
+    100% {margin-top: 0}
 }
