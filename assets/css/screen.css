@@ -85,7 +85,12 @@ footer{
     grid-template-areas:
         "cont loc"
         "p p";
-    margin-top: auto;
+}
+footer section{
+    margin: 0;
+    width: auto;
+    border-radius: 0;
+    height: auto;
 }
 #location{
     grid-area: loc;
@@ -117,6 +122,10 @@ iframe{
 }
 #maker{
     text-align: center;
+    padding-left: 0;
+}
+footer p{
+    grid-area: p;
 }
 
 
