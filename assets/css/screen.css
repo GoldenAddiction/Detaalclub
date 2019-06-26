@@ -58,8 +58,12 @@ nav a{
     text-align: center;
 
 }
-nav a:hover{
-    color:darkgrey;
+nav li:hover{
+    background-color: white;
+    border-bottom: 2px solid #164e95;
+}
+nav li:hover a{
+    color: #164e95;
 }
 #phone{
     display: none;
